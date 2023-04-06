@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Renta</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script>
+			window.onload = function() {
+			  document.getElementById('upbutton').style.display = 'none';
+			};
+		    window.onscroll = function() 
+			{
+			  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+			  if (scrolled > 300) 
+				document.getElementById('upbutton').style.display = 'block';
+			  else 
+				document.getElementById('upbutton').style.display = 'none';
+			}
+			
+			var smoothJumpUp = function() 
+			{
+				if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) 
+				{
+					window.scrollBy(0,-30);
+					setTimeout(smoothJumpUp, 20);
+				}
+			}
+		</script>
+	</head>
+		<body>
+			<div class="wrapper">
+			<a class="upbutton" id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+				<img src="images/up.png" alt="Top" border="none" title="Наверх">
+			</a>
+				<header>
+					<a href="index.html"><img src="images/logotip2.png" alt="Whitesquare logo"></a>
+					<div class="heading">
+						<h1>Выбор ренты недвижимости в городах Индии</h1>
+					</div>
+				</header>
+				<nav>
+					<ul class="top-menu">
+						<li class="active"><a href="index.html">Главная</a></li>
+						<li><a href="registration.html">Входъ</a></li>
+						<li><a href="sale.html">SALE</a></li>
+						<li><a href="about.html">О проекте</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+					<main>
+					<aside>
+					    <h2>Категрии</h2>
+							<nav>
+							   <p><input type="checkbox" name="b" value="Bedroom"> Bedroom</p>
+							   <p><input type="checkbox" name="l" value="Locality"> Locality</p>
+							   <p><input type="checkbox" name="p" value="Property type"> Property type</p>
+							   <p><input type="checkbox" name="a" value="Area"> Area</p>
+							   <p><input type="checkbox" name="c" value="City"> City</p>
+							   <p><input type="submit" class="custom-btn2 btn-8" value="Выбрать"></p> 
+							</nav>
+
+						<nav>
+						   <div class="dropdown">
+							  <button class="dropbtn">Сортировать по</button>
+							  <div class="dropdown-content">
+								<a option value=0>----------</a>
+								<a option value=1>возрастанию цены</a>
+								<a option value=2>убыванию цены</a>
+							  </div>
+						   </div>
+						</nav>
+						
+						<nav>
+						   <div class="dropdown">
+							  <button class="dropbtn">Категория цены</button>
+							  <div class="dropdown-content">
+								<a option value=0>----------</a>
+								<a option value=1>низкая цена</a>
+								<a option value=2>средняя цена</a>
+								<a option value=3>высокая цена</a>
+							  </div>
+						   </div>
+						</nav>
+						<nav>
+						    <button class="custom-btn btn-8"><span>Предыдущая страница</span></button>
+						</nav>
+						<nav>
+						     <button class="custom-btn btn-8"><span>Следующая страница</span></button> 
+						</nav>
+
+					</aside>
+					<article>
+						<section>
+								
+								<table>
+								  <tbody>
+									<tr>
+									  <th>Bedroom</th>
+									  <th>Locality</th>
+									  <th>Property type</th>
+									  <th>Price</th>
+									  <th>Area</th>
+									  <th>City</th>
+									  <th>Category</th>
+									  <th>Выбрать</th>
+									</tr>
+									<tr onclick="window.location.href='about.html'; return false">
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									  <td><input type="checkbox" name="b" value="Bedroom"></td>
+									</tr>
+									<tr onclick="window.location.href='contacts.html'; return false">
+									  <td>3.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>120000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>2</td>
+									</tr>
+									<tr>
+									  <td>4.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>5.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220500.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>3.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>120000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>2</td>
+									</tr>
+									<tr>
+									  <td>4.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>5.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220500.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>3.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>120000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>2</td>
+									</tr>
+									<tr>
+									  <td>4.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>5.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220500.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>3.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>120000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>2</td>
+									</tr>
+									<tr>
+									  <td>4.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>5.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220500.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>3.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>120000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>2</td>
+									</tr>
+									<tr>
+									  <td>4.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>5.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220500.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>3.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>120000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>2</td>
+									</tr>
+									<tr>
+									  <td>4.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>5.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>220500.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+									<tr>
+									  <td>2.0</td>
+									  <td>Bodakdev</td>
+									  <td>Apartment</td>
+									  <td>20000.0</td>
+									  <td>1450.0</td>
+									  <td>Ahmedabad</td>
+									  <td>1</td>
+									</tr>
+								  </tbody>
+								</table>
+
+				
+						</section>
+					</article>
+				</main>
+			</div>
+			<footer>
+				<div class="footer">
+				</div>
+			</footer>
+		</body>
+</html>
